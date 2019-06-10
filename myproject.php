@@ -56,13 +56,13 @@
         if (is_numeric($retc)) {
          
        
-         echo "<h2>Program Output (an array):</h2>";
+         echo "<h2>Program Output:</h2>";
          foreach ($output as $line) {
            echo $line;
            echo "<br>";
          }
        
-         echo "<h2>Program Return Code:</h2>";
+         echo "<h2>Your Lucky Number Is:</h2>";
          echo $retc;
 	}
     ?>

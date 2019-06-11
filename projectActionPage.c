@@ -88,17 +88,15 @@ int main (int argc, char* argv[]){
         printf("Should never run"); 
    } 
     
- int x = 10;   
- int mathRequirement;  
-{
+  int x = 10;  
+
   while ( x < 20 ){
   x++;
-  Math1 = (seeds + mailmen + run + scream);
+  int  Math1 = (seeds + mailmen + run + scream);
   int math = (3 * Math1 * Math1);
   printf("value of math: %d\n", math);
   return math ;
   }
-} 
 return 0;
 }
 }

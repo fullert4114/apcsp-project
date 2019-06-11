@@ -1,4 +1,4 @@
-TARGET = projectmake
+TARGET = finalproject
 LIBS = -lm
 CC = gcc
 CFLAGS = -g -Wall -I.
@@ -8,15 +8,15 @@ CFLAGS = -g -Wall -I.
 default: $(TARGET)
 all: default
 
-HEADERS = $(actionpage.h)
-OBJECTS = $(projectActionPage.o)
+HEADERS = $(wildcard *.h)
+OBJECTS = $(patsubst %.c, %.o, $(wildcard *.c))
 
 %.o: %.c $(HEADERS)
-    $(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 $(TARGET): $(OBJECTS)
-    $(CC) $^ $(LIBS) -o $@
+	$(CC) $^ $(LIBS) -o $@
 
 clean:
-    -rm -f *.o
-    -rm -f $(TARGET)
+	-rm -f *.o
+	-rm -f $(TARGET)

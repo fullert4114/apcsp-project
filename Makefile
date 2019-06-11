@@ -9,7 +9,7 @@ default: $(TARGET)
 all: default
 
 HEADERS = $(actionpage.h)
-OBJECTS = $(finalActionPage.c)
+OBJECTS = $(projectActionPage.o)
 
 %.o: %.c $(HEADERS)
     $(CC) $(CFLAGS) -c $< -o $@

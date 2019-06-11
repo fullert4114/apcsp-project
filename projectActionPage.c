@@ -87,12 +87,19 @@ int main (int argc, char* argv[]){
     } else{
         printf("Should never run"); 
    } 
-int mathRequirement;  
+    
+ int x = 10;   
+ int mathRequirement;  
 {
-  int Math1 = (seeds + mailmen + run + scream);
-  int math = (3.14159265358979323846 * Math1 * Math1);
-  return math;
+  while ( x < 20 ){
+  x++;
+  Math1 = (seeds + mailmen + run + scream);
+  int math = (3 * Math1 * Math1);
+  printf("value of math: %d\n", math);
+  return math ;
+  }
 } 
+return 0;
 }
 }
 
